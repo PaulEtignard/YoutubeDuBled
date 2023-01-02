@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelle video{% endblock %}
+{% block body %}
+    <h1>Créer une nouvelle video</h1>
+    {{ form_start(formVideo) }}
+    {{ form_row(formVideo.titre) }}
+    {{ form_row(formVideo.description) }}
+    {{ form_row(formVideo.imageFile) }}
+    <input type="submit" class="btn btn-primary" value="Valider"/>
+    {{ form_end(formVideo) }}
+{% endblock %}
