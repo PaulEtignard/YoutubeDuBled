@@ -1,0 +1,23 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class Videos {
+Titre : string not null
+Déscription : string null
+Likes : int null
+Dislike : int null
+createdAt : datetime not null
+modifiedAt : datetime null
+}
+
+class Auteur{
+Nom : string not null
+Prenom : string not null
+Pseudo : string null
+createdAt : datetime not null
+}
+
+
+Videos "1..1"--"0..*" Auteur
+@enduml
